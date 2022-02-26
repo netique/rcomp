@@ -5,9 +5,34 @@ Authors@R: person('Jan', 'Netik', email = 'netikja@gmail.com', role = c('cre', '
 Description: PKG_DESC.
 License: GPL (>= 3)
 Imports: 
+    attempt,
     config (>= 0.3.1),
+    dplyr,
+    DT,
+    EpiEstim,
+    ggplot2,
+    glue,
     golem (>= 0.3.1),
-    shiny (>= 1.7.1)
+    htmltools,
+    httr,
+    jsonlite,
+    lubridate,
+    mtaux (>= 0.0.3),
+    processx,
+    shiny (>= 1.7.1),
+    tidyr
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
+Suggests: 
+    rmarkdown,
+    knitr,
+    spelling,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
+Remotes: 
+    netique/mtaux
+VignetteBuilder: knitr
+URL: https://github.com/netique/rcomp
+BugReports: https://github.com/netique/rcomp/issues

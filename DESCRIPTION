@@ -6,6 +6,7 @@ Description: PKG_DESC.
 License: GPL (>= 3)
 Imports: 
     attempt,
+    bslib,
     config (>= 0.3.1),
     dplyr,
     DT,
@@ -17,18 +18,21 @@ Imports:
     httr,
     jsonlite,
     lubridate,
+    magrittr,
     mtaux (>= 0.0.3),
+    pkgload,
     processx,
     shiny (>= 1.7.1),
     tidyr
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
 Suggests: 
     rmarkdown,
     knitr,
     spelling,
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    covr
 Config/testthat/edition: 3
 Language: en-US
 Remotes: 

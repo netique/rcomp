@@ -17,6 +17,8 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![Codecov test coverage](https://codecov.io/gh/netique/rcomp/branch/master/graph/badge.svg)](https://app.codecov.io/gh/netique/rcomp?branch=master)
+[![R-CMD-check](https://github.com/netique/rcomp/workflows/R-CMD-check/badge.svg)](https://github.com/netique/rcomp/actions)
 <!-- badges: end -->
 
 The goal of rcomp is to ...
@@ -34,7 +36,7 @@ You can install the development version of rcomp like so:
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-library(rcomp)
+# library(rcomp)
 ## basic example code
 ```
 

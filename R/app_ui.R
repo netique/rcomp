@@ -43,7 +43,9 @@ app_ui <- function(request) {
         "About",
         icon = icon("info"),
         mod_about_ui("about_ui_1")
-      )
+      ),
+      nav("session info",
+          verbatimTextOutput("sessinfo"))
     )
   )
 }

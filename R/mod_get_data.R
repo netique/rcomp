@@ -34,7 +34,7 @@ mod_get_data_server <- function(id) {
       )
 
       r %>%
-        content(type = "text") %>%
+        content(type = "text", encoding = "UTF-8") %>%
         fromJSON() %>%
         pluck("hydra:totalItems")
     })
@@ -52,7 +52,7 @@ mod_get_data_server <- function(id) {
       )
 
       r %>%
-        content() %>%
+        content(encoding = "UTF-8") %>%
         bind_rows()
     }) %>% bindCache(total_items())
 

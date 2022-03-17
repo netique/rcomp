@@ -39,8 +39,6 @@ mod_get_data_server <- function(id) {
         pluck("hydra:totalItems")
     })
 
-    output$total_items <- renderPrint(total_items())
-
 
     d <- reactive({
       r <- GET("https://onemocneni-aktualne.mzcr.cz/api/v3/nakazeni-vyleceni-umrti-testy",
@@ -53,7 +51,12 @@ mod_get_data_server <- function(id) {
 
       r %>%
         content(encoding = "UTF-8") %>%
-        bind_rows()
+        bind_rows() %>%
+        transmute(
+          date = lubridate::ymd(datum),
+          inc = prirustkovy_pocet_nakazenych,
+          dead = prirustkovy_pocet_umrti
+        )
     }) %>% bindCache(total_items())
 
 

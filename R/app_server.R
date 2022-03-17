@@ -10,5 +10,4 @@ app_server <- function(input, output, session) {
 
   mod_estimate_server("estimate_ui_1", d = main_data)
 
-output$sessinfo <- renderPrint({sessionInfo()})
 }
